@@ -273,11 +273,11 @@ AVSessionPresetForUIVideoQuality (UIImagePickerControllerQualityType quality)
         UIViewAutoresizingFlexibleWidth |
         UIViewAutoresizingFlexibleHeight;
 
-    UIButton *info =
-        [UIButton buttonWithType: UIButtonTypeInfoLight];
-    [info addTarget: self
-          action: @selector(info)
-          forControlEvents: UIControlEventTouchUpInside];
+//    UIButton *info =
+//        [UIButton buttonWithType: UIButtonTypeInfoLight];
+//    [info addTarget: self
+//          action: @selector(info)
+//          forControlEvents: UIControlEventTouchUpInside];
 
     toolbar.items =
         [NSArray arrayWithObjects:
@@ -291,9 +291,9 @@ AVSessionPresetForUIVideoQuality (UIImagePickerControllerQualityType quality)
                  target: nil
                  action: nil]
                 autorelease],
-            [[[UIBarButtonItem alloc]
-                 initWithCustomView: info]
-                autorelease],
+          //  [[[UIBarButtonItem alloc]
+          //       initWithCustomView: info]
+          //      autorelease],
             nil];
     [controls addSubview: toolbar];
     [toolbar release];
